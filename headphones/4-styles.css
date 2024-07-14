@@ -1,0 +1,442 @@
+/* CSS Reset and Box Model */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'mainFontRegular';
+    src: url('./fonts/SourceSansPro-Regular.otf');
+    /* Add other font faces similarly */
+}
+
+/* Holberton Icons */
+@font-face {
+    font-family: 'holberton_school-icon';
+    src: url('./fonts/holberton_school-icon.eot?sq4eq4');
+    /* Add other formats */
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    font-family: 'holberton_school-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Colors */
+:root {
+    --main-color: #FF6565;
+}
+
+/* Hero Section */
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('./images/headphones_hero_1.jpg') no-repeat 30%;
+    background-size: cover;
+    padding: 5vh 5vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 11rem;
+    height: 2rem;
+}
+
+nav ul {
+    display: flex;
+    width: 20rem;
+    justify-content: space-evenly;
+}
+
+.hero-text {
+    max-width: 45rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'mainFontBold';
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-top: 6rem;
+}
+
+.hero-part-1-text p {
+    font-family: 'mainFontBold';
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+.btn {
+    width: 9rem;
+    height: 2.5rem;
+    background-color: var(--main-color);
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'mainFontBold';
+    border: 0;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    transition: ease-in-out 0.3s;
+}
+
+/* What We Do Section */
+.wwd {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.wwd-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    max-width: 50rem;
+}
+
+.wwd-container h2 {
+    font-family: 'mainFontSemibold';
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.wwd-container .desc {
+    max-width: 70%;
+    align-self: center;
+    font-family: 'mainFontRegular';
+    color: #071629;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.wwd-items {
+    display: flex;
+    margin-top: 5rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.wwd-item {
+    padding: 1rem 1rem;
+}
+
+.wwd-item h3 {
+    font-family: 'mainFontSemibold';
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.wwd-item p {
+    margin-top: 1rem;
+    font-family: 'mainFontRegular';
+    line-height: 1.5;
+}
+
+/* Results Section */
+.results {
+    background: url('./images/headphones_hero_2.jpg') no-repeat 42%;
+    background-size: cover;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.results-container h2 {
+    font-family: 'mainFontRegular';
+    font-size: 2rem;
+    margin-top: 5rem;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.results-container #results {
+    font-family: 'mainFontRegular';
+    color: white;
+    max-width: 70%;
+    line-height: 2;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 15px;
+}
+
+.pentagons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.pentagon {
+    background: url('./images/pentagone.png') no-repeat;
+    background-size: cover;
+    width: 11.5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pentagon span {
+    font-size: 2rem;
+    font-family: 'mainFontSemibold';
+    color: whitesmoke;
+}
+
+.pentagon p {
+    font-family: 'mainFontRegular';
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 5vh 5vw;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 36%;
+    height: 80vh;
+    gap: 1rem;
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-family: 'mainFontSemibold';
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+form input,
+form textarea {
+    border: 0;
+    border-bottom: 1px solid grey;
+    margin-top: 6px;
+    height: 2rem;
+    font-family: 'mainFontRegular';
+    font-size: 1rem;
+    color: #071629;
+}
+
+form label {
+    font-family: 'mainFontSemibold';
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+.contact-container .btn {
+    width: 9rem;
+    height: 2.5rem;
+    background-color: var(--main-color);
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'mainFontBold';
+    border: 0;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    transition: ease-in-out 0.3s;
+}
+
+/* Footer Section */
+footer {
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
+    height: 35vh;
+}
+
+footer img {
+    width: 11rem;
+    height: 2rem;
+}
+
+footer .footer-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 10vh 5vw;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'mainFontRegular';
+    color: whitesmoke;
+}
+
+.footer-icons .icons span {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .wwd-item {
+        padding: 1rem;
+        width: 36%;
+    }
+
+    .wwd-items {
+        flex-wrap: wrap;
+    }
+
+    .results-container #results {
+        max-width: unset;
+    }
+
+    .results {
+        height: unset;
+    }
+
+    .contact-container {
+        width: 70%;
+        height: 100vh;
+    }
+
+    .contact-container .btn {
+        width: 12rem;
+        height: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .hero-container {
+        background-position: center;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav label {
+        width: 25%;
+    }
+
+    .nav .menu {
+        font-family: 'mainFontLight';
+        font-size: 0.8rem;
+        display: none;
+    }
+
+    #toggle:checked ~ .menu {
+        display: block;
+        text-align: center;
+    }
+
+    .icon-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .holberton_school-icon-menu {
+        color: whitesmoke;
+        display: unset;
+    }
+
+    .menu li {
+        margin: 15px auto;
+        font-size: 12px;
+    }
+
+    .wwd-items {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .wwd-container .desc {
+        max-width: 90%;
+    }
+
+    .contact-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contact-container .btn {
+        width: 12rem;
+        height: 3.5rem;
+    }
+
+    .footer-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

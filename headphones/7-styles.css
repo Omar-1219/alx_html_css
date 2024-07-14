@@ -1,0 +1,336 @@
+/* CSS Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Box Model */
+html {
+    font-size: 62.5%; /* Sets base font size to 10px */
+}
+
+body {
+    font-size: 1.6rem; /* Equivalent to 16px */
+    line-height: 1.5;
+    font-family: 'mainFontRegular', Arial, sans-serif;
+    background-color: #ffffff; /* Fallback color */
+    background-image: url('../images/background.jpg'); /* Replace with your actual path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #071629;
+    padding: 0;
+    margin: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'mainFontBold', Arial, sans-serif;
+    color: #071629;
+}
+
+p {
+    font-family: 'mainFontRegular', Arial, sans-serif;
+    color: #071629;
+}
+
+/* Links */
+a {
+    color: #FF6565;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #9c9da1;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff; /* Fallback color */
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    font-size: 2rem;
+    color: #071629;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav a {
+    font-size: 1.6rem;
+    color: #071629;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #FF6565;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/hero-bg.jpg'); /* Replace with your actual path */
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #FF6565;
+    color: #ffffff;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #9c9da1;
+}
+
+/* What We Do Section */
+.what-we-do {
+    background-color: #ffffff; /* Fallback color */
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.what-we-do .wwd-item {
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.what-we-do .wwd-item:hover {
+    transform: translateY(-10px);
+}
+
+.what-we-do .wwd-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.what-we-do .wwd-item p {
+    font-size: 1.6rem;
+    color: #9c9da1;
+}
+
+/* Results Section */
+.results {
+    background-image: url('../images/results-bg.jpg'); /* Replace with your actual path */
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.results h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.results .pentagons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.results .pentagon {
+    width: 15rem;
+    height: 15rem;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.results .pentagon:hover {
+    background-color: #9c9da1;
+    transform: scale(1.05);
+}
+
+.results .pentagon span {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.results .pentagon p {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact form label {
+    font-size: 2rem;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.contact form .btn {
+    background-color: #FF6565;
+    color: #ffffff;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.contact form .btn:hover {
+    background-color: #9c9da1;
+}
+
+/* Footer */
+.footer {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.footer .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer .footer-icons span {
+    font-size: 3rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-icons span:hover {
+    color: #FF6565;
+}
+
+.footer p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    /* Adjustments for tablets and smaller desktops */
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.4rem;
+    }
+    .wwd .wwd-item {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablets */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .what-we-do .wwd-items {
+        flex-direction: column;
+    }
+    .results .pentagons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact form {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .what-we-do .wwd-item {
+        padding: 1rem;
+    }
+    .results .pentagon {
+        width: 12rem;
+        height: 12rem;
+    }
+    .contact form {
+        max-width: 100%;
+    }
+    .footer .footer-icons {
+        flex-wrap: wrap;
+    }
+}
